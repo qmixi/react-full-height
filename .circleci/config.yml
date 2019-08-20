@@ -6,18 +6,20 @@ defaults: &defaults
     - image: circleci/node:8.9.1
 
 jobs:
-  test-version:
-    <<: *defaults
-    steps:
-      - checkout
-      - run:
-          name: Run version test
-          command: yarn test:version
   deploy:
     <<: *defaults
     steps:
-      - attach_workspace:
-          at: ~/repo
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
+      - run:
+          name: "Install project dependencies"
+          command: npm i
+      - run:
+          name: "Build project"
+          command: npm run build
       - run:
           name: Authenticate with registry
           command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/repo/.npmrc

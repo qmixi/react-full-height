@@ -8,12 +8,10 @@
     "lint": "eslint src/*",
     "build": "webpack --mode production"
   },
-  "author": {
-    "name": "qmixi"
-  },
+  "author": "qmixi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/qmixi/react-full-height"
+    "url": "git+https://github.com/qmixi/react-full-height.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -41,5 +39,9 @@
     "full-height",
     "react-full-height",
     "viewport height"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/qmixi/react-full-height/issues"
+  },
+  "homepage": "https://github.com/qmixi/react-full-height#readme"
 }

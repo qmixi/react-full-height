@@ -29,14 +29,7 @@ workflows:
   version: 2
   test-deploy:
     jobs:
-      - test-version:
-          filters:
-            branches:
-              only:
-                - master
       - deploy:
-          requires:
-            - test-version
           filters:
             branches:
               only:

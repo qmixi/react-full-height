@@ -1,0 +1,45 @@
+{
+  "name": "react-full-height",
+  "version": "1.0.0",
+  "description": "React component to make your container view port height",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "NODE_ENV=production webpack --watch --mode development",
+    "lint": "eslint src/*",
+    "build": "webpack --mode production"
+  },
+  "author": {
+    "name": "qmixi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qmixi/react-full-height"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.6",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "keywords": [
+    "react",
+    "fullheight",
+    "full-height",
+    "react-full-height",
+    "viewport height"
+  ]
+}

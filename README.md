@@ -10,7 +10,7 @@
     <img src="static/icon.png" alt="Logo" width="100" height="100">
   </a>
 
-  <h3 align="center">React Full Height</h3>
+  <h2 align="center">React Full Height</h2>
 
   <p align="center">
     Responsive component helping you make perfect full viewport height sections 
@@ -29,7 +29,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This component has been built to help you create responsive and customizable full-height sections. You can always have a full-height section or you can adjust `ReactFullHeight` component easily to achieve full-height effect only in mobile, desktop or in some specific resolution range.
+This component has been built to help you create responsive and customizable full-height sections. You can always have a full-height section or you can adjust `FullHeight` component easily to achieve full-height effect only in mobile, desktop or in some specific resolution range.
 
 ### Installation
 
@@ -53,7 +53,9 @@ The very basic usage is to just wrap your content in `FullHeight`.
 import React from "react";
 import FullHeight from "react-full-height";
 
-const MySection = () => <FullHeight>My section content</FullHeight>;
+const MySection = () => (
+    <FullHeight>My section content</FullHeight>
+);
 ```
 
 ### Passing className and section default props

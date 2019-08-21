@@ -13,7 +13,7 @@
   <h3 align="center">React Full Height</h3>
 
   <p align="center">
-    Customizable component helping you make perfect full view port sections
+    Responsive component helping you make perfect full viewport height sections 
     <br />
     <br />
     <a href="https://qmixi.github.io/react-full-height/demo/">View Demo</a>
@@ -118,9 +118,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-Author: [@qmixi](https://github.com/qmixi)
-<br/>
-Project Link: [https://github.com/qmixi/react-full-height](https://github.com/qmixi/react-full-height)
+#### Author: [@qmixi](https://github.com/qmixi)
+#### Project Link: [https://github.com/qmixi/react-full-height](https://github.com/qmixi/react-full-height)
 
 
 [forks-shield]: https://img.shields.io/github/forks/qmixi/react-full-height.svg?style=flat-square

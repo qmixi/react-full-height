@@ -1,6 +1,6 @@
 {
   "name": "react-full-height",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "React component to make your container view port height",
   "main": "build/index.js",
   "scripts": {

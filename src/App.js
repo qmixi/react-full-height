@@ -5,25 +5,21 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ReactFullHeight>
-          <div>
-            <p>
-              Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
-          </div>
-        </ReactFullHeight>
-      </header>
-    </div>
+    <main className="App">
+      <ReactFullHeight className="App-header" startWidth={500}>
+        <h1>
+            React FullHeight
+        </h1>
+        <a
+          className="App-link"
+          href="https://github.com/qmixi/react-full-height"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn more
+        </a>
+      </ReactFullHeight>
+    </main>
   );
 }
 

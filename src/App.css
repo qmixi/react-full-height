@@ -1,6 +1,5 @@
-
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(45deg, #ef4f03, #2f35ff);
   display: flex;
   flex-direction: column;
   align-items: center;

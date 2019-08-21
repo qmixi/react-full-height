@@ -19,8 +19,9 @@ const MAX_BREAKPOINT = 1000000;
 const Wrapper = styled.section`
   ${({ startWidth, endWidth }) =>
     `@media screen and (min-width: ${getResulutionValue(
-      startWidth
-    )}) and (max-width: ${getResulutionValue(endWidth)})`} {
+      startWidth,
+      MIN_BREAKPOINT
+    )}) and (max-width: ${getResulutionValue(endWidth, MAX_BREAKPOINT)})`} {
     height: 100vh;
   }
 `;

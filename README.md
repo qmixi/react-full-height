@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/qmixi/react-full-height.svg?style=svg)](https://circleci.com/gh/qmixi/react-full-height) [![Stargazers [stars-shield]][stars-url] [![Issues][issues-shield]][issues-url] [![npm](https://badgen.net/npm/dt/react-full-height)](https://www.npmjs.com/package/react-full-height) [![npm](https://badgen.net/npm/dm/react-full-height)](https://www.npmjs.com/package/react-full-height) [![MIT License][license-shield]][license-url]
+[![CircleCI](https://circleci.com/gh/qmixi/react-full-height.svg?style=svg)](https://circleci.com/gh/qmixi/react-full-height) [![Issues][issues-shield]][issues-url] [![npm](https://badgen.net/npm/dt/react-full-height)](https://www.npmjs.com/package/react-full-height) [![npm](https://badgen.net/npm/dm/react-full-height)](https://www.npmjs.com/package/react-full-height) [![MIT License][license-shield]][license-url]
 
 
 
@@ -105,20 +105,9 @@ const TabletFullHeightSection = () => (
 
 | Prop name  | Type | Required | Description  |
 | --------- | ---- | -------- | ------------ |
-| className | string | false | Class name provided to the component. It takes css modules as well. |
+| className | string | false | The class name provided to the component. It takes CSS modules as well. |
 startWidth | number | false | RWD Breakpoint representing `(min-width)` - By setting it you're telling component from which resolution it should be full-height section. |
 | endWidth | number | false | RWD Breakpoint representing `(max-width`) - Decide at which screen resolution your section should no longer be a full-heigh. 
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/RocketFeature`)
-3. Commit your Changes (`git commit -m 'Add some RocketFeature'`)
-4. Push to the Branch (`git push origin feature/RocketFeature`)
-5. Open a Pull Request
 
 
 <!-- LICENSE -->
@@ -133,21 +122,9 @@ Author: [@qmixi](https://github.com/qmixi)
 Project Link: [https://github.com/qmixi/react-full-height](https://github.com/qmixi/react-full-height)
 
 
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/qmixi/react-full-height.svg?style=flat-square
-[contributors-url]: https://github.com/qmixi/react-full-height/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/qmixi/react-full-height.svg?style=flat-square
 [forks-url]: https://github.com/qmixi/react-full-height/network/members
-[stars-shield]: https://img.shields.io/github/stars/qmixi/react-full-height.svg?style=flat-square
-[stars-url]: https://github.com/qmixi/react-full-height/stargazers
 [issues-shield]: https://img.shields.io/github/issues/qmixi/react-full-height.svg?style=flat-square
 [issues-url]: https://github.com/qmixi/react-full-height/issues
 [license-shield]: https://img.shields.io/github/license/qmixi/react-full-height.svg?style=flat-square
 [license-url]: https://github.com/qmixi/react-full-height/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png

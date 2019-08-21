@@ -5,12 +5,12 @@
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-full-height": "^1.0.0",
+    "react-full-height": "^1.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf demo && react-scripts build && mv build demo",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

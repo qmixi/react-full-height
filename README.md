@@ -119,6 +119,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 Author: [@qmixi](https://github.com/qmixi)
+<br/>
 Project Link: [https://github.com/qmixi/react-full-height](https://github.com/qmixi/react-full-height)
 
 

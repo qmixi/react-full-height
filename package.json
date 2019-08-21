@@ -1,11 +1,12 @@
 {
   "name": "react-full-height",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "React component to make your container view port height",
   "main": "build/index.js",
   "scripts": {
     "start": "NODE_ENV=production webpack --watch --mode development",
     "lint": "eslint src/*",
+    "test": "jest",
     "build": "webpack --mode production"
   },
   "author": "qmixi",
@@ -25,6 +26,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
+    "jest": "^24.9.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7"
   },

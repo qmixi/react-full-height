@@ -1,15 +1,55 @@
+/*
+ * External imports
+ */
 import React from "react";
-import { oneOfType, node, arrayOf } from "prop-types";
+import { oneOfType, node, arrayOf, string, number } from "prop-types";
 import styled from "styled-components";
 
+/*
+ * Internal imports
+ */
+import { getResulutionValue } from "./utils";
+
+const MIN_BREAKPOINT = 0;
+const MAX_BREAKPOINT = 1000000;
+
+/*
+ * Component definitions
+ */
 const Wrapper = styled.section`
-  height: 100vh;
+  ${({ startWidth, endWidth }) =>
+    `@media screen and (min-width: ${getResulutionValue(
+      startWidth
+    )}) and (max-width: ${getResulutionValue(endWidth)})`} {
+    height: 100vh;
+  }
 `;
 
-const ReactFullheight = ({ children }) => <Wrapper>{children}</Wrapper>;
+const ReactFullheight = ({ children, className, startWidth, endWidth }) => (
+  <Wrapper startWidth={startWidth} endWidth={endWidth} className={className}>
+    {children}
+  </Wrapper>
+);
 
+/*
+ * Component's prop-types definition
+ */
 ReactFullheight.propTypes = {
-  children: oneOfType([arrayOf(node), node]).isRequired
+  children: oneOfType([arrayOf(node), node]).isRequired,
+  className: string.isRequired,
+  startWidth: number,
+  endWidth: number
 };
 
+/*
+ * Component's default prop-types definition
+ */
+ReactFullheight.defaultProps = {
+  startWidth: MIN_BREAKPOINT,
+  endWidth: MAX_BREAKPOINT
+};
+
+/*
+ * Export main component
+ */
 export default ReactFullheight;

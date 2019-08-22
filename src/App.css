@@ -10,8 +10,28 @@
   padding: 20px;
 }
 
+.App-header-exceed {
+  background: linear-gradient(45deg, #fbcb42, #bc1d1d);  
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.App-header-cantexceed {
+  background: linear-gradient(45deg, #fb4286, #1dbcbc);
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
 .App-link {
   color: #61dafb;
+}
+
+.App-text {
+  text-align: center;
+  width: 500px;
+  margin: auto;
 }
 
 @keyframes App-logo-spin {

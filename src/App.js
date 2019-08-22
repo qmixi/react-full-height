@@ -6,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <main className="App">
-      <ReactFullHeight className="App-header" startWidth={450} endWidth={1200}>
+      <ReactFullHeight className="App-header" startWidth={450} title="test" id="section1">
         <h1>
             React FullHeight
         </h1>

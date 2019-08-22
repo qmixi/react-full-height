@@ -18,6 +18,7 @@ const MAX_BREAKPOINT = 1000000;
  */
 const Wrapper = styled.section`
   box-sizing: border-box;
+  overflow: auto;
 
   ${({ startWidth, endWidth }) =>
     `@media screen and (min-width: ${getResulutionValue(

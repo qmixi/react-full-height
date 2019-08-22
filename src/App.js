@@ -1,5 +1,5 @@
 import React from "react";
-import ReactFullHeight from "./fullHeight";
+import ReactFullHeight from "react-full-height";
 
 import "./App.css";
 
@@ -28,9 +28,7 @@ function App() {
         id="section1"
         canExceed
       >
-        <h1>
-          {`canExceed={true}`}
-        </h1>
+        <h1>{`canExceed={true}`}</h1>
         <p className="App-text">
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -67,9 +65,7 @@ function App() {
         title="test"
         id="section1"
       >
-        <h1>
-          {`canExceed={false}`}
-        </h1>
+        <h1>{`canExceed={false}`}</h1>
         <p className="App-text">
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae

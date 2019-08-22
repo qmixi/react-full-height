@@ -1,16 +1,14 @@
 /*
  * External imports
  */
-import React from 'react';
-import {
-  oneOfType, node, arrayOf, string, number,
-} from 'prop-types';
-import styled from 'styled-components';
+import React from "react";
+import { oneOfType, node, arrayOf, string, number, bool } from "prop-types";
+import styled from "styled-components";
 
 /*
  * Internal imports
  */
-import { getResulutionValue } from './utils';
+import { getResulutionValue } from "./utils";
 
 const MIN_BREAKPOINT = 0;
 const MAX_BREAKPOINT = 1000000;
@@ -19,11 +17,14 @@ const MAX_BREAKPOINT = 1000000;
  * Component definitions
  */
 const Wrapper = styled.section`
-  ${({ startWidth, endWidth }) => `@media screen and (min-width: ${getResulutionValue(
-    startWidth,
-    MIN_BREAKPOINT,
-  )}) and (max-width: ${getResulutionValue(endWidth, MAX_BREAKPOINT)})`} {
-    height: 100vh;
+  box-sizing: border-box;
+
+  ${({ startWidth, endWidth }) =>
+    `@media screen and (min-width: ${getResulutionValue(
+      startWidth,
+      MIN_BREAKPOINT
+    )}) and (max-width: ${getResulutionValue(endWidth, MAX_BREAKPOINT)})`} {
+    ${({ canExceed }) => (canExceed ? "min-height" : "height")}: 100vh;
   }
 `;
 
@@ -32,12 +33,14 @@ const ReactFullheight = ({
   className,
   startWidth,
   endWidth,
+  canExceed,
   ...otherProps
 }) => (
   <Wrapper
     startWidth={startWidth}
     endWidth={endWidth}
     className={className}
+    canExceed={canExceed}
     {...otherProps}
   >
     {children}
@@ -52,6 +55,7 @@ ReactFullheight.propTypes = {
   className: string.isRequired,
   startWidth: number,
   endWidth: number,
+  canExceed: bool
 };
 
 /*
@@ -59,7 +63,7 @@ ReactFullheight.propTypes = {
  */
 ReactFullheight.defaultProps = {
   startWidth: MIN_BREAKPOINT,
-  endWidth: MAX_BREAKPOINT,
+  endWidth: MAX_BREAKPOINT
 };
 
 /*

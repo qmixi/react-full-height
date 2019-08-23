@@ -1,6 +1,6 @@
 {
   "name": "react-full-height",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "React component to make your container view port height",
   "main": "build/index.js",
   "scripts": {
@@ -37,10 +37,18 @@
   },
   "keywords": [
     "react",
+    "component",
+    "container",
+    "section",
+    "full",
+    "height",
+    "viewport",
     "fullheight",
     "full-height",
+    "100%",
     "react-full-height",
-    "viewport height"
+    "responsive",
+    "customizable"
   ],
   "bugs": {
     "url": "https://github.com/qmixi/react-full-height/issues"

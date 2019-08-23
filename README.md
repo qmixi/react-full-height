@@ -60,7 +60,7 @@ const MySection = () => <FullHeight>My section content</FullHeight>;
 
 ### Passing className and section default props
 
-`<FullHeight />` renders a `section`, and it will accept any usual `div` props, including `className`.
+`<FullHeight />` renders a `section`, and it will accept any usual `div`/`section` props, including `className`.
 
 ```jsx
 import React from "react";
@@ -113,7 +113,7 @@ const DesktopFullHeightSection = () => (
 );
 
 /*
- * Make full-height section only in the tablet resolution screens (from to 768px to 1024px)
+ * Make full-height section only in the tablet resolution screens (from 768px to 1024px)
  */
 const TabletFullHeightSection = () => (
   <FullHeight startWidth={768} endWidth={1024}>
@@ -142,6 +142,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 #### Author: [@qmixi](https://github.com/qmixi)
+
+#### Demo: [https://qmixi.github.io/react-full-height](https://qmixi.github.io/react-full-height)
 
 #### Project Link: [https://github.com/qmixi/react-full-height](https://github.com/qmixi/react-full-height)
 

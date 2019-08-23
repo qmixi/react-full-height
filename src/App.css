@@ -10,7 +10,7 @@
 }
 
 .App-header-exceed {
-  background: linear-gradient(45deg, #fbcb42, #bc1d1d);  
+  background: linear-gradient(45deg, #fbcb42, #bc1d1d);
   padding: 20px 0;
   display: block;
   text-align: center;
@@ -40,4 +40,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.fork-wr img {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  border: 0;
 }

@@ -6,6 +6,16 @@ import "./App.css";
 function App() {
   return (
     <main className="App">
+      <a
+        class="fork-wr"
+        href="https://github.com/qmixi/react-full-height"
+        target="_blank"
+      >
+        <img
+          src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"
+          alt="Fork me on GitHub"
+        />
+      </a>
       <ReactFullHeight
         className="App-header"
         startWidth={450}

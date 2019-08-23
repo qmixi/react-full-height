@@ -47,7 +47,8 @@
     "full-height",
     "100%",
     "react-full-height",
-    "viewport"
+    "responsive",
+    "customizable"
   ],
   "bugs": {
     "url": "https://github.com/qmixi/react-full-height/issues"

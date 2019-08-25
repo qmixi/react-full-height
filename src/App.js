@@ -7,7 +7,7 @@ function App() {
   return (
     <main className="App">
       <a
-        class="fork-wr"
+        className="fork-wr"
         href="https://github.com/qmixi/react-full-height"
         target="_blank"
       >

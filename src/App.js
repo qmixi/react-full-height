@@ -16,12 +16,7 @@ function App() {
           alt="Fork me on GitHub"
         />
       </a>
-      <ReactFullHeight
-        className="App-header"
-        startWidth={450}
-        title="test"
-        id="section1"
-      >
+      <ReactFullHeight className="App-header" title="test" id="section1">
         <h1>React FullHeight</h1>
         <a
           className="App-link"
@@ -33,12 +28,36 @@ function App() {
         </a>
       </ReactFullHeight>
       <ReactFullHeight
+        className="App-header App-header-responsive"
+        startWidth={450}
+        title="test"
+        id="section1"
+      >
+        <h1>{`startWidth={450}`}</h1>
+        <a
+          className="App-link"
+          href="https://github.com/qmixi/react-full-height#make-your-full-height-section-responsive"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn more about <b>startWidth</b> and <b>endWidth</b> props
+        </a>
+      </ReactFullHeight>
+      <ReactFullHeight
         className="App-header App-header-exceed"
         title="test"
         id="section1"
         canExceed
       >
         <h1>{`canExceed={true}`}</h1>
+        <a
+          className="App-link"
+          href="https://github.com/qmixi/react-full-height#follow-the-content-height-when-it-exceeds-the-viewport-height"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn more about <b>canExceed</b> prop
+        </a>
         <p className="App-text">
           "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae

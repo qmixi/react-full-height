@@ -9,6 +9,13 @@
   padding: 20px;
 }
 
+.App-header-responsive {
+  background: linear-gradient(45deg, #6803ef, #2fcbff);
+  padding: 20px 0;
+  display: block;
+  text-align: center;
+}
+
 .App-header-exceed {
   background: linear-gradient(45deg, #fbcb42, #bc1d1d);
   padding: 20px 0;
@@ -25,12 +32,14 @@
 
 .App-link {
   color: #61dafb;
+  text-align: center;
 }
 
 .App-text {
   text-align: center;
-  width: 500px;
+  max-width: 500px;
   margin: auto;
+  margin-top: 20px;
 }
 
 @keyframes App-logo-spin {

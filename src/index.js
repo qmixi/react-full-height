@@ -53,10 +53,10 @@ const ReactFullheight = ({
  */
 ReactFullheight.propTypes = {
   children: oneOfType([arrayOf(node), node]).isRequired,
-  className: string.isRequired,
+  className: string,
   startWidth: number,
   endWidth: number,
-  canExceed: bool
+  canExceed: bool,
 };
 
 /*
@@ -64,7 +64,7 @@ ReactFullheight.propTypes = {
  */
 ReactFullheight.defaultProps = {
   startWidth: MIN_BREAKPOINT,
-  endWidth: MAX_BREAKPOINT
+  endWidth: MAX_BREAKPOINT,
 };
 
 /*

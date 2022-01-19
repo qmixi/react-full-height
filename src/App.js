@@ -9,6 +9,7 @@ function App() {
       <a
         className="fork-wr"
         href="https://github.com/qmixi/react-full-height"
+        rel="noopener noreferrer"
         target="_blank"
       >
         <img
